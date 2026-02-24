@@ -1,0 +1,113 @@
+.users-container {
+    position: relative;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.users-card {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+}
+
+.users-card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .btn-logOut {
+        border: none;
+        background: none;
+        transition: all 0.5s ease;
+        &:hover {
+            transform: scale(1.2);
+            color: red;
+        }
+    }
+}
+
+.users-title {
+    font-size: 1.5rem;
+    color: #1a1a1b;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.users-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    transition: all 0.2s ease;
+}
+
+.user-item:hover {
+    background-color: #fafafa;
+    border-color: #ddd;
+}
+
+.user-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #e4e6eb;
+    margin-right: 15px;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.user-email {
+    margin: 0;
+    font-size: 1rem;
+    color: #050505;
+}
+
+.user-status {
+    margin: 4px 0 0;
+    font-size: 0.85rem;
+    color: #65676b;
+}
+
+.user-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-toggle, .btn-delete {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-toggle:hover {
+    background-color: #e8f0fe;
+}
+
+.btn-delete:hover {
+    background-color: #fee2e2;
+    border-color: #fecaca;
+}
+
+.btn-toggle.active {
+    border-color: #34a853;
+}
+
