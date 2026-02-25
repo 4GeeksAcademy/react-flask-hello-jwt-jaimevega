@@ -49,7 +49,7 @@ def login():
         return jsonify({"msg": "Email or password is invalid in payload"}), 400
     
     access_token = create_access_token(identity=email, additional_claims={"user_id": user.id})
-    return jsonify({"access_token": access_token}), 400
+    return jsonify({"access_token": access_token}), 200
 
 @api.route('/users', methods=['GET'])
 @jwt_required()
